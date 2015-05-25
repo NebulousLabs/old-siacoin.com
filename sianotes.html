@@ -7,20 +7,22 @@
 	<meta name="description" content="Sia, Industrial Grade Decentralized Storge">
 	<meta name="author" content="David Vorick, Luke Champine, Severin Ibarluzea">
 	<title>Sia</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/icon.min.css" rel="stylesheet">
 	<link href="css/sia.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src='js/screenshot.js'></script>
 </head>
 <body>
 	<div class='container'>
 		<div class='page'>
 			<div class='row header'>
 				<div class='col-md-3 logo-container'>
-					<img class='logo' src='assets/logo/sia.png'>
+					<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
 				</div>
 				<div class='col-md-9'>
 					<div class='header-links'>
-						<span class='item'><a href="index.html">Home</a></span>
 						<span class='item'><a href="about.html">About</a></span>
 						<span class='item'><a href="jobs.html">Jobs</a></span>
 						<span class='item'><a href="sia.pdf">Whitepaper</a></span>
@@ -66,9 +68,10 @@
 							Download this tool to generate an address:
 							<br>
 							<ul>
-							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-linux_amd64.tar.gz">Linux</a></li>
-							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-darwin_amd64.zip">OS X</a></li>
-							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-windows_amd64.zip">Windows</a></li>
+							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-linux_amd64.tar.gz">Linux 64bit</a></li>
+							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-darwin_amd64.zip">OS X 64bit</a></li>
+							<li><a href="https://github.com/NebulousLabs/Sia/releases/download/siag-v1.0/Sia_Address_Generator-v1.0-windows_amd64.zip">Windows 64bit</a></li>
+							<li><a href="https://github.com/NebulousLabs/Sia/releases/siag-v1.0/">Other Platforms</a></li>
 							</ul>
 							Once you have an address, send your Sianotes on Nxt to our original address <b>NXT-K5ZJ-NNR2-4J4B-D92UF</b>
 							Include a message that says 'I am redeeming my Sianotes, my Sia address is: [address].'
@@ -78,7 +81,7 @@
 							<br><br>
 							<b>What does the current Siafund database look like?</b>
 							<br><br>
-							<p style="font-family: 'Courier New'">
+							<p style="font-family: monospace">
 							7d0c44f7664e2d34e53efde0661a6f628ec9264785ae8e3cd7c973e8d190c3c9: 8780<br>
 							0439e5bc7f14ccf5d3a7e882d040923e45625166dd077b64466bc771791ac6fc: 2<br>
 							2c6aef338a66f213ccc5f8b2db7a98fb13143420af20049c4921a3a5deb8d9da: 8<br>
@@ -143,22 +146,34 @@
 				<div class='row'>
 					<div class='col-md-6'>
 						<div class='logo-container'>
-							<img class='logo' src='assets/logo/sia.png'>
+							<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
+						</div>
+						<div class='social-media'>
+							<a href="http://facebook.com/NebulousLabs"><i class='black large bordered facebook icon'></i></a>
+							<a href="http://twitter.com/NebulousLabs"><i class='black large bordered twitter icon'></i></a>
+							<a href="http://siatalk-slackin.herokuapp.com"><i class='black large bordered slack icon'></i></a>
+							<a href="http://eepurl.com/bonKaL"><i class='black large bordered mail icon'></i></a>
+							<a href="http://github.com/NebulousLabs/Sia"><i class='black large bordered github alternate icon'></i></a>
+							<br> We also invite you to #siatalk on freenode.
 						</div>
 					</div>
 					<div class='col-md-6'>
 						<div class='download-links'>
 							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-win64.zip" class='link'>Windows</a>
-							<span style="font-size: 0.8em">(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_windows_amd64.zip" class='link'>CLI only</a>)</span>
-							<br/>
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-win64.zip" class='link'>Windows 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_windows_amd64.zip" class='link'>CLI only</a>)</span>
+							<br>
 							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-linux64.tar.xz" class='link'>Linux</a>
-							<span style="font-size: 0.8em">(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_linux_amd64.tar.gz" class='link'>CLI only</a>)</span>
-							<br/>
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-linux64.tar.xz" class='link'>Linux 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_linux_amd64.tar.gz" class='link'>CLI only</a>)</span>
+							<br>
 							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-darwin.tar.xz" class='link'>OS X</a>
-							<span style="font-size: 0.8em">(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_darwin_amd64.zip" class='link'>CLI only</a>)</span>
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.0-beta/Sia-UI-v0.3.0-beta-darwin.tar.xz" class='link'>OS X 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.1/Sia_0.3.1-release.beta_darwin_amd64.zip" class='link'>CLI only</a>)</span>
+							<br>
+							Download Sia for
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/v0.3.0-beta/" class='link'>Other Platforms</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/v0.3.1/" class='link'>CLI only</a>)</span>
 						</div>
 					</div>
 				</div>
@@ -171,23 +186,22 @@
 					<div class='footer-links'>
 						<span class='link'><a href="index.html">Home</a></span>
 						<span class='link'><a href="about.html">About</a></span>
-						<span class='item'><a href="jobs.html">Jobs</a></span>
+						<span class='link'><a href="jobs.html">Jobs</a></span>
 						<span class='link'><a href="sia.pdf">Whitepaper</a></span>
 						<span class='link'><a href="http://github.com/NebulousLabs/Sia">GitHub</a></span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-58715089-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-58715089-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 	</div>
 </body>
 </html>
