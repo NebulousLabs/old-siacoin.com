@@ -91,6 +91,11 @@ body {
 	text-decoration: none;
 }
 
+.extra-stuff .social-media i.bordered.icon {
+	/* remove drop shadow */
+	box-shadow: 0 0 0 0em;
+}
+
 .extra-stuff .download-links{
 	padding:30px;
 	top: 17px;
