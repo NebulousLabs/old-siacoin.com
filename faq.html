@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sia, Industrial Grade Decentralized Storge">
+	<meta name="author" content="David Vorick, Luke Champine, Severin Ibarluzea">
+	<title>Sia</title>
+	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/icon.min.css" rel="stylesheet">
+	<link href="css/sia.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src='js/screenshot.js'></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='page'>
+			<div class='row header'>
+				<div class='col-md-3 logo-container'>
+					<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
+				</div>
+				<div class='col-md-9'>
+					<div class='header-links'>
+						<span class='item'><a href="about.html">About</a></span>
+						<span class='item'><a href="jobs.html">Jobs</a></span>
+						<span class='item'><a href="sia.pdf">Whitepaper</a></span>
+						<span class='item'><a href="http://github.com/NebulousLabs/Sia">GitHub</a></span>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-xs-12'>
+					<div class='content-title'>
+						Sianotes
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-xs-12'>
+					<div class='content'>
+						<div>
+							<b>When I try to announce, I get 'ensure you have forwarded port xxxxx'.</b>
+							<br>
+							This error gets returned if siad is unable to connect to itself over the internet.
+							Most of the time, this means that you have not forwarded your ports.
+							You may also see this error if you are behind a firewall or are using some kind of VPN.
+							If you are unsure how to forward your ports, check out <a href="http://portforward.com">portforward.com</a>, a site that can help you forward your port.
+							Most of the time, forwarding your ports is easy, you just have to see how to do it the first time.
+							Sia's default ports are 9981 and 9982.
+							If you are using the default ports, please forward both of those ports.
+							<br><br>
+							<b>Is the miner pointing to the right address?</b>
+							<br>
+							If your miner is able to fetch blocks, then it is also mining to the right address.
+							Sia discourages address use, and handles most of the address management behind the scenes.
+							All addresses (including hidden addresses) are stored in the 'wallet.dat' file.
+							<br><br>
+							<b>Where can I buy and sell siacoins?</b>
+							<br>
+							Sia is not currently on any altcoin exchanges, though we have reached out to a few and hope to be on some exchanges soon.
+							There is a siacoin trading thread at bitcointalk: <a href="https://bitcointalk.org/index.php?topic=1083781.0">/bitcointalk.org/index.php?topic=1083781.0</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='extra-stuff'>
+				<div class='row'>
+					<div class='col-md-6'>
+						<div class='logo-container'>
+							<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
+						</div>
+						<div class='social-media'>
+							<a href="http://facebook.com/NebulousLabs"><i class='black large bordered facebook icon'></i></a>
+							<a href="http://twitter.com/NebulousLabs"><i class='black large bordered twitter icon'></i></a>
+							<a href="http://siatalk-slackin.herokuapp.com"><i class='black large bordered slack icon'></i></a>
+							<a href="http://eepurl.com/bonKaL"><i class='black large bordered mail icon'></i></a>
+							<a href="http://github.com/NebulousLabs/Sia"><i class='black large bordered github alternate icon'></i></a>
+							<br> We also invite you to #siatalk on freenode.
+						</div>
+					</div>
+					<div class='col-md-6'>
+						<div class='download-links'>
+							Download Sia for
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3-beta/Sia-UI-v0.3.3-beta-win64.zip" class='link'>Windows 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3/Sia_CLI_0.3.3-release.beta_windows_amd64.zip" class='link'>CLI</a>)</span>
+							<br>
+							Download Sia for
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3-beta/Sia-UI-v0.3.3-beta-linux64.tar.xz" class='link'>Linux 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3/Sia_CLI_0.3.3-release.beta_linux_amd64.tar.gz" class='link'>CLI</a>)</span>
+							<br>
+							Download Sia for
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3-beta/Sia-UI-v0.3.3-beta-darwin.tar.xz" class='link'>OS X 64bit</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3/Sia_CLI_0.3.3-release.beta_darwin_amd64.zip" class='link'>CLI</a>)</span>
+							<br>
+							Download Sia for
+							<a href="https://github.com/NebulousLabs/Sia-UI/releases/v0.3.3-beta/" class='link'>Other Platforms</a>
+							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/v0.3.3/" class='link'>CLI</a>)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-xs-12'>
+				<div class='footer'>
+					<div class='copyright'>&copy; Nebulous Inc.</div>
+					<div class='footer-links'>
+						<span class='link'><a href="index.html">Home</a></span>
+						<span class='link'><a href="about.html">About</a></span>
+						<span class='link'><a href="jobs.html">Jobs</a></span>
+						<span class='link'><a href="sia.pdf">Whitepaper</a></span>
+						<span class='link'><a href="http://github.com/NebulousLabs/Sia">GitHub</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-58715089-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	</div>
+</body>
+</html>
