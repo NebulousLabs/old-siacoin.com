@@ -33,50 +33,38 @@
 			<div class='row'>
 				<div class='col-xs-12'>
 					<div class='content-title'>
-						Sia
+						Sianotes
 					</div>
-					<div class='content-subtext'>Decentralized Storage</div>
 				</div>
 			</div>
 			<div class='row'>
 				<div class='col-xs-12'>
 					<div class='content'>
-						Sia is a new decentralized cloud storage platform aimed at giving users control of their data.
-						Storage is pulled from a large network of hosts, each using Sia's blockchain to form storage contracts with clients.
-						When uploading, clients erasure code their data into many encrypted pieces and upload each piece to a different host.
-						The storage contracts on the blockchain ensure that the host will only get paid if they actually store the file (it's like a blockchain-based escrow).
-						Out of the hundreds of hosts, only a fraction need to be online for the data to be recovered.
-						Even in a network with many unreliable hosts, the data is safe.
-						<br><br>
-						Anybody with spare storage space can join the network as a host and get income from that storage.
-						This openness allows Sia to tap into the mllions of terabytes of unused storage in the world.
-						The encryption combined with the geographic diversity of hosts gives users both privacy and high reliability.
-						<br><br>
-						The long term goals of Sia involve leveraging a global network of hosts to improve upon existing cloud storage platforms.
-						We believe that we will see improvements in price, security, availability, latency, and throughput compared to traditional object stores.
-						Availability, latency, and throughput are all benefitted by storing data in hundreds of places at the same time.
-						Out of the hudreds of places, data only needs to be retrived from a handful, and the client can choose the closest and fastest hosts for retrieving the file.
-						For larger files, downloads can be done in parallel, using all of the hundreds of hosts simultaneously.
-						Even when the average host has a slow upload speed, the combined speed of hundreds of hosts means that downloads will be blazing fast.
-						In many ways, a global decentralized network of storage hosts is similar to a CDN.
-						More about the technology can be found on the <a href="about.html">about page →</a>
-						<br><br>
-						Sia has launched the cryptocurrency, with an early storage platform to accompany.
-						Files up to 500mb can be uploaded to the Sia network, storage payments occur using siacoin.
-						Currently, the best way to acquire siacoin is either through irc or the slack.
-						Sia can be downloaded by using the links at the bottom of the page.
-
-						<div class='screenshots'>
-								<span class='img-container'><img src='assets/screenshots/main.png'/></span>
-								<span class='img-container'><img src='assets/screenshots/txn.png'/></span>
-								<span class='img-container'><img src='assets/screenshots/upload.png'/></span>
-								<span class='img-container'><img src='assets/screenshots/host.png'/></span>
+						<div>
+							<b>When I try to announce, I get 'ensure you have forwarded port xxxxx'.</b>
+							<br>
+							This error gets returned if siad is unable to connect to itself over the internet.
+							Most of the time, this means that you have not forwarded your ports.
+							You may also see this error if you are behind a firewall or are using some kind of VPN.
+							If you are unsure how to forward your ports, check out <a href="http://portforward.com">portforward.com</a>, a site that can help you forward your port.
+							Most of the time, forwarding your ports is easy, you just have to see how to do it the first time.
+							Sia's default ports are 9981 and 9982.
+							If you are using the default ports, please forward both of those ports.
+							<br><br>
+							<b>Is the miner pointing to the right address?</b>
+							<br>
+							If your miner is able to fetch blocks, then it is also mining to the right address.
+							Sia discourages address use, and handles most of the address management behind the scenes.
+							All addresses (including hidden addresses) are stored in the 'wallet.dat' file.
+							<br><br>
+							<b>Where can I buy and sell siacoins?</b>
+							<br>
+							Sia is not currently on any altcoin exchanges, though we have reached out to a few and hope to be on some exchanges soon.
+							There is a siacoin trading thread at bitcointalk: <a href="https://bitcointalk.org/index.php?topic=1083781.0">/bitcointalk.org/index.php?topic=1083781.0</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<span class='dark-overlay'></span>
-			<span class='big-image'><img/></span>
 			<div class='extra-stuff'>
 				<div class='row'>
 					<div class='col-md-6'>
