@@ -30,11 +30,25 @@ body {
 	text-align:right;
 }
 
-.header .header-links .item{
+.header .header-links .link{
 	margin-left:20px;
 }
-.header .header-links .item:first-child{
+.header .header-links .link:first-child{
 	margin-left:0px;
+}
+
+.footer{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.footer .copyright{
+	float:left;
+}
+.footer .footer-links{
+	text-align:right;
+}
+.footer .footer-links .link{
+	margin-left:20px;
 }
 
 .content-title{
@@ -98,20 +112,6 @@ body {
 	padding:30px;
 	top: 17px;
 	position: relative;
-}
-
-.footer{
-	padding-top:50px;
-	padding-bottom:50px;
-}
-.footer .copyright{
-	float:left;
-}
-.footer .footer-links{
-	text-align:right;
-}
-.footer .footer-links .link{
-	margin-left:20px;
 }
 
 .screenshots{

@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Sia, Industrial Grade Decentralized Storge">
-	<meta name="author" content="David Vorick, Luke Champine, Severin Ibarluzea">
-	<title>Sia</title>
-	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/icon.min.css" rel="stylesheet">
-	<link href="css/sia.css" rel="stylesheet">
-	<script src="js/jquery.min.js"></script>
-	<script src='js/screenshot.js'></script>
-</head>
+
+<!--#include file="ssi/head.html" -->
+
 <body>
 	<div class='container'>
 		<div class='page'>
-			<div class='row header'>
-				<div class='col-md-3 logo-container'>
-					<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
-				</div>
-				<div class='col-md-9'>
-					<div class='header-links'>
-						<span class='item'><a href="about.html">About</a></span>
-						<span class='item'><a href="jobs.html">Jobs</a></span>
-						<span class='item'><a href="sia.pdf">Whitepaper</a></span>
-						<span class='item'><a href="http://github.com/NebulousLabs/Sia">GitHub</a></span>
-					</div>
-				</div>
-			</div>
+
+			<!--#include file="ssi/header.html" -->
+
 			<div class='row'>
 				<div class='col-xs-12'>
 					<div class='content-title'>
@@ -72,66 +51,14 @@
 					</div>
 				</div>
 			</div>
-			<div class='extra-stuff'>
-				<div class='row'>
-					<div class='col-md-6'>
-						<div class='logo-container'>
-							<a href="index.html"><img class='logo' src='assets/logo/sia.png'></a>
-						</div>
-						<div class='social-media'>
-							<a href="http://facebook.com/NebulousLabs"><i class='black large bordered facebook icon'></i></a>
-							<a href="http://twitter.com/NebulousLabs"><i class='black large bordered twitter icon'></i></a>
-							<a href="http://siatalk-slackin.herokuapp.com"><i class='black large bordered slack icon'></i></a>
-							<a href="http://eepurl.com/bonKaL"><i class='black large bordered mail icon'></i></a>
-							<a href="http://github.com/NebulousLabs/Sia"><i class='black large bordered github alternate icon'></i></a>
-							<br> We also invite you to #siatalk on freenode.
-						</div>
-					</div>
-					<div class='col-md-6'>
-						<div class='download-links'>
-							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3.1-beta/Sia-UI-v0.3.3.1-beta-win64.zip" class='link'>Windows 64bit</a>
-							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3.1-beta/Sia-v0.3.3.1-beta-windows-amd64.zip" class='link'>CLI</a>)</span>
-							<br>
-							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3.1-beta/Sia-UI-v0.3.3.1-beta-linux64.tar.xz" class='link'>Linux 64bit</a>
-							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3.1-beta/Sia-v0.3.3.1-beta-linux-amd64.tar.gz" class='link'>CLI</a>)</span>
-							<br>
-							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/download/v0.3.3.1-beta/Sia-UI-v0.3.3.1-beta-darwin.tar.xz" class='link'>OS X 64bit</a>
-							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/download/v0.3.3.1-beta/Sia-v0.3.3.1-beta-darwin-amd64.zip" class='link'>CLI</a>)</span>
-							<br>
-							Download Sia for
-							<a href="https://github.com/NebulousLabs/Sia-UI/releases/v0.3.3.1-beta/" class='link'>Other Platforms</a>
-							<span style="font-size: 0.8em">&nbsp;(<a href="https://github.com/NebulousLabs/Sia/releases/v0.3.3/" class='link'>CLI</a>)</span>
-						</div>
-					</div>
-				</div>
-			</div>
+
+			<!--#include file="ssi/pagefooter.html" -->
+
 		</div>
-		<div class='row'>
-			<div class='col-xs-12'>
-				<div class='footer'>
-					<div class='copyright'>&copy; Nebulous Inc.</div>
-					<div class='footer-links'>
-						<span class='link'><a href="index.html">Home</a></span>
-						<span class='link'><a href="about.html">About</a></span>
-						<span class='link'><a href="jobs.html">Jobs</a></span>
-						<span class='link'><a href="sia.pdf">Whitepaper</a></span>
-						<span class='link'><a href="http://github.com/NebulousLabs/Sia">GitHub</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-58715089-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+
+		<!--#include file="ssi/backgroundfooter.html" -->
+		<!--#include file="ssi/analytics.html" -->
+
 	</div>
 </body>
 </html>
