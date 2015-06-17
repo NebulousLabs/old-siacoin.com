@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<!--#include file="ssi/head.html" -->
+
+<body>
+	<div class='container'>
+		<div class='page'>
+
+			<!--#include file="ssi/header.html" -->
+
+			<!-- Description title header -->
+			<div class='row'>
+				<div class='col-xs-12'>
+					<div class='content-title'>
+						Siafunds Alpha
+					</div>
+					<div class='content-subtext'>Siafunds and Siac</div>
+				</div>
+			</div>
+
+			<!-- Description paragraphs -->
+			<div class='row'>
+				<div class='col-xs-12'>
+					<div class='content'>
+						The early siafund tool is ready for use.
+						Please be careful when using this tool, incorrect use can cause loss of siafunds.
+						In the coming weeks and months, simpler and more forgiving tools will be created for working with siafunds.
+						<br><br>
+						<b>Step 1: Get your new siafund address.</b><br>
+						The new version of Sia uses addresses with checksums.
+						This means that all of your old addresses will be recognized as invalid, and you need to regenerate them.
+						The checksums will prevent typos from sending coins into oblivion.
+						To get your new address, you will need to use siag again.
+						<b>'siag keyinfo [keyfile]'</b>
+						This will print out your updated address.
+						The updated address will receive all siafunds sent to the old address.
+						<br><br>
+						<b>Step 2: Help the wallet find your siafunds.</b><br>
+						Siac has a command to help you track a siafund wallet.
+						<b>'siac wallet siafunds track [address]'</b>
+						Note that this does not load your private key into the wallet, it merely allows the wallet to follow your siafunds around.
+						You still need to keep your keyfiles.
+						After you have told the wallet to track your siafunds, you will need to restart siad.
+						After restarting siad, all the siafunds owned by the key you are tracking should appear in the wallet.
+						<br><br>
+						<b>Step 3: Spending siafunds.</b><br>
+						Siafund spending is a little different than siacoin spending.
+						Only transactions that make it into the blockchain are considered by the wallet.
+						Because of this, the wallet will sometimes (or frequently) try to spend siafunds that it has already spent.
+						To be safest, you should only make 1 spend at a time, then wait until the transaction appears in a block before making another spend.
+						<b>'siac wallet siafunds spend [amount] [destination] [keyfiles]'</b>
+						The amount is the number of siafunds you are spending.
+						The destination is the address you are sending siafunds to.
+						Be sure to only send siafunds to siafund addresses.
+						The keyfiles are the set of files that house the siafund keys.
+						If you used a multisig setup, you will need at least M out of the N keys.
+						If you only used a single-sig setup, you will only need the one key.
+						<br><br>
+						Siafunds have siacoins stored in them.
+						On the current network, they have very few coins stored in them, because very few coins have been spent on file storage.
+						When you send a siafund to another address, all of the siacoins stored in the siafund are put into an address in your wallet.
+						To pull siacoins out of your siafunds and into your wallet, either send the siafunds to someone else, or send them to yourself (you can even send them to the address that they are already in).
+						The siacoins will not appear in your wallet until a 144 block waiting period has occurred (just like when mining a block).
+						This concludes the alpha siafunds tutorial.
+						Please be careful, there are easy ways to make mistakes that will cause you to lose siafunds.
+						Future implementations will add more safety features and be easier to use.
+						Thanks for investing in siafunds!
+					</div>
+				</div>
+			</div>
+			<span class='dark-overlay'></span>
+			<span class='big-image'><img/></span>
+
+			<!--#include file="ssi/pagefooter.html" -->
+
+		</div>
+
+		<!--#include file="ssi/backgroundfooter.html" -->
+		<!--#include file="ssi/analytics.html" -->
+
+	</div>
+</body>
+</html>
