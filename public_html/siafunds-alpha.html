@@ -32,13 +32,13 @@
 						This means that all of your old addresses will be recognized as invalid, and you need to regenerate them.
 						The checksums will prevent typos from sending coins into oblivion.
 						To get your new address, you will need to use siag again.
-						<b>'siag keyinfo [keyfile]'</b>
+						<b><pre>'siag keyinfo [keyfile]'</pre></b>
 						This will print out your updated address.
 						The updated address will receive all siafunds sent to the old address.
 						<br><br>
 						<b>Step 2: Help the wallet find your siafunds.</b><br>
 						Siac has a command to help you track a siafund wallet.
-						<b>'siac wallet siafunds track [address]'</b>
+						<b><pre>'siac wallet siafunds track [address]'</pre></b>
 						Note that this does not load your private key into the wallet, it merely allows the wallet to follow your siafunds around.
 						You still need to keep your keyfiles.
 						After you have told the wallet to track your siafunds, you will need to restart siad.
@@ -48,8 +48,8 @@
 						Siafund spending is a little different than siacoin spending.
 						Only transactions that make it into the blockchain are considered by the wallet.
 						Because of this, the wallet will sometimes (or frequently) try to spend siafunds that it has already spent.
-						To be safest, you should only make 1 spend at a time, then wait until the transaction appears in a block before making another spend.
-						<b>'siac wallet siafunds spend [amount] [destination] [keyfiles]'</b>
+						It is generally cleanest to only have 1 transaction at a time, waiting until the next block to make the next transaction.
+						<b><pre>'siac wallet siafunds spend [amount] [destination] [keyfiles]'</pre></b>
 						The amount is the number of siafunds you are spending.
 						The destination is the address you are sending siafunds to.
 						Be sure to only send siafunds to siafund addresses.
@@ -63,6 +63,7 @@
 						To pull siacoins out of your siafunds and into your wallet, either send the siafunds to someone else, or send them to yourself (you can even send them to the address that they are already in).
 						The siacoins will not appear in your wallet until a 144 block waiting period has occurred (just like when mining a block).
 						This concludes the alpha siafunds tutorial.
+						<br><br>
 						Please be careful, there are easy ways to make mistakes that will cause you to lose siafunds.
 						Future implementations will add more safety features and be easier to use.
 						Thanks for investing in siafunds!
