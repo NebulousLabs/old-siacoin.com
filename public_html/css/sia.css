@@ -51,6 +51,12 @@ body {
 	margin-left:20px;
 }
 
+.guest-logo{
+	max-height:240px;
+	max-width:240px;
+	margin-bottom:40px;
+}
+
 .content-title{
 	font-size:48px;
 	margin-bottom:30px;
